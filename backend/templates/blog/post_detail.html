@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Hoszai - BlogDetail
+{% endblock title %}
+
+
+{% block content %}
+    <div class="post">
+        <h3>Post detail {{ post.title }} </h3>
+        <p>{{ post.content }}</p>
+        <p>{{ post.excerpt }}</p>
+    </div>
+
+{% endblock content %}
