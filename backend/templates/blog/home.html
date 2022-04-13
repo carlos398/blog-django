@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Hoszai - Blog
+{% endblock title %}
+
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content }}</p>
+        </div>
+    {% endfor %}
+
+{% endblock content %}
